@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio3</title>
+    <style>
+        form {
+            border: 3px solid black;
+        }
+ 
+        div {
+            position: absolute;
+            right: 2em;
+            top: 5em;
+        }
+ 
+        .a {
+            position: absolute;
+            left: 0.6em;
+            top: 13.5em;
+        }
+    </style>
+</head>
+<body>
+    <form action="ejercicio 3.php" method="post">
+    <h2>DATOS DEL ALUMNO:</h2>
+    nombre:<input type="text" name="nombre" required>
+    <div>
+    Enseñanza:<br>
+ 
+    Secundaria <input type="radio" name="op" value="Secundaria">
+    <input type="radio" name="op" value="Bachillerato">Bachillerato<br>
+    Ciclo Medio <input type="radio" name="op" value=" un ciclo medio">
+    <input type="radio" name="op" value="un ciclo superior">Ciclo Superior<br>
+    </div>
+    <br><br>  Introduzca su teléfono: <input type="text" name="telefono" required><br>
+    Matriculado <input type="checkbox" name="matricula" value="si"><br>
+    Mostrar datos: <select name="datos" >
+        <option value="pantalla">Por pantalla</option>
+        <option value="archivo">En archivo .txt</option>
+    </select>
+    <br>
+    <input type="submit" value="enviar datos" class="a">
+   
+    </form>
+</body>
+</html>
